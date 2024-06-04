@@ -1,0 +1,35 @@
+// Task 1: Add two numbers
+num addTwo(num a, num b) {
+  return a + b;
+}
+
+// Task 2: Subtract two numbers
+num subtractTwo(num a, num b) {
+  return a - b;
+}
+
+// Task 3: Multiply two numbers
+num multiplyTwo(num a, num b) {
+  return a * b;
+}
+
+// Task 4: Divide two numbers
+num divideTwo(num a, num b) {
+  if (b == 0) {
+    throw ArgumentError('The divisor cannot be zero.');
+  }
+  return a / b;
+}
+
+// Task 5: Get the length of a string
+int stringLength(String s) {
+  return s.length;
+}
+
+// Task 6: Get the first element of a list
+dynamic getFirstElement(List list) {
+  if (list.isEmpty) {
+    throw ArgumentError('The list cannot be empty.');
+  }
+  return list[0];
+}
